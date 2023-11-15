@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #808080; /* Gris */
+    color: #FFFFFF; /* Blanco */
+}
+
+h1, h2, h3 {
+    color: #000000; /* Negro */
+}
+
+p {
+    line-height: 1.6;
+    color: #FFFFFF; /* Blanco */
+}
+
+.section-divider {
+    border-bottom: 2px solid #FFFFFF; /* Blanco */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #FFFFFF; /* Blanco */
+    padding: 10px;
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.collapsible-content {
+    display: none;
+}
+
+.collapsible-header {
+    cursor: pointer;
+}
+
+/* Añade más estilos según sea necesario */
