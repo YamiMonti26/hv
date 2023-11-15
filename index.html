@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Hoja de Vida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #808080; /* Gris */
+            color: #FFFFFF; /* Blanco */
+        }
+
+        h1, h2, h3 {
+            color: #000000; /* Blanco */
+        }
+
+        p {
+            line-height: 1.6;
+            color: #FFFFFF; /* Blanco */
+        }
+
+        .section-divider {
+            border-bottom: 2px solid #FFFFFF; /* Blanco */
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #FFFFFF; /* Blanco */
+            padding: 10px;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .collapsible-content {
+            display: none;
+        }
+
+        .collapsible-header {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rosa Yamira Montenegro Hernandez</h1>
+        <p>Ingeniera de Sistemas</p>
+    </header>
+
+    <div class="section-divider"></div>
+
+    <section>
+        <h2 class="collapsible-header" onclick="toggleSection('Sobre Mi')">Sobre Mi</h2>
+        <div id="Sobre Mi" class="collapsible-content">
+            <p>Soy un Contador Público y estudiante de ingeniería, destacándome por mi responsabilidad y puntualidad. Mi capacidad de aprendizaje rápido me ha permitido adquirir conocimientos sólidos en contabilidad, al mismo tiempo que me embarco en un continuo proceso de educación. Aporto una valiosa experiencia en servicio al cliente y soporte técnico, tanto presencial como virtual, especializándome en aplicaciones educativas y software del sector salud. Mi historial laboral refleja mi habilidad para gestionar proyectos eficientemente y trabajar en equipo. Soy un profesional comprometido, orientado al logro de objetivos y entusiasmado por contribuir al crecimiento de la organización.</p>
+        </div>
+    </section>
+    <div class="section-divider"></div>
+
+     <section>
+        <h2 class="collapsible-header" onclick="toggleSection('informacion')">Mi Información</h2>
+        <div id="informacion" class="collapsible-content">
+            <p>Correo: rmontenegroh@ucompensar.edu.co </p>
+            <p>Celular: +57 3124973133 </p>
+            <p>Linkedin: https://www.linkedin.com/in/rosa-yamira-montenegro-hernandez/ </p>
+            <p>Dirección: Villavicencio / Meta / Colombia </p>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section>
+        <h2 class="collapsible-header" onclick="toggleSection('educacion')">Educación</h2>
+        <div id="educacion" class="collapsible-content">
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Institución</th>
+                    <th>Año de Graduación: Actualmente </th>
+                </tr>
+                <tr>
+                    <td>Ingenieria de Sistemas</td>
+                    <td>Fundación Universitaria Compensar -  Ucompensar</td>
+                    <td>Actualmente</td>
+                </tr>
+                 <td>Contador Publico</td>
+                    <td>Universidad de los Llanos - Unillanos</td>
+                    <td>2016</td>
+                </tr>
+                    <td>Tecnologo en Administración del Ensamble y Mantenimiento de Computadores y Redes</td>
+                    <td>Servicio Nacional de Aprendizaje - SENA</td>
+                    <td>2014</td>
+                </tr>
+                <!-- Agrega más filas según sea necesario -->
+            </table>
+        </div>
+    </section>
+
+    <!-- Agrega más secciones según sea necesario -->
+
+    <div class="section-divider"></div>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
